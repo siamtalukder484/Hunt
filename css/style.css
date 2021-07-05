@@ -25,8 +25,7 @@ h1,h2,h3,h4,h5,h6,p{
     bottom: 15px;
     right: 15px;
     display: none;
-    z-index: 999999;
-    cursor: pointer;
+    z-index: 99;
 }
 .bottom-to-top i{
     width: 50px;
@@ -46,6 +45,26 @@ h1,h2,h3,h4,h5,h6,p{
 /* =======================Navbar Part Start Here========================= */
 #navbar{
     border-bottom: 1px solid #75672c;
+}
+.nav-top-class{
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+.nav-add-bg{
+    background-color: #222;
+}
+.nav-top-class.nav-add-bg .nav-item .nav-link{
+    line-height: 20px;
+}
+.nav-top-class.nav-add-bg .nav-item .nav-link::after{
+    bottom: -18px;
+}
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0; 
@@ -71,9 +90,9 @@ h1,h2,h3,h4,h5,h6,p{
     position: absolute;
     content: '';
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: #fec600;
-    bottom: -10px;
+    bottom: -11px;
     left: 0;
     transition: all ease-in-out 0.3s;
     opacity: 0;
@@ -96,11 +115,11 @@ h1,h2,h3,h4,h5,h6,p{
     clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 }
 #navbar{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 111;
 }
 .b-slide-prev {
     position: absolute;
@@ -1280,7 +1299,6 @@ h1,h2,h3,h4,h5,h6,p{
 }
 /* =======================Footer Part Start Here========================= */
 .footer-main1{
-    background-color: #fec600;
     margin-top: -72px;
 }
 #footer{
