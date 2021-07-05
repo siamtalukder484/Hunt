@@ -18,8 +18,38 @@ ul,ol,li{
 h1,h2,h3,h4,h5,h6,p{
     line-height: 0.8;
 }
+
+/* =======================Bannar Type JS Part Start Here========================= */
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 /* =======================Back to Top Part Start Here========================= */
-/* ===bottom to top=== */
 .bottom-to-top{
     position: fixed;
     bottom: 15px;
